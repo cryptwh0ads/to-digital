@@ -1,9 +1,10 @@
 import React from "react"
+import HomeBoardComponent from "../../components/HomeBoard"
 
 const HomePage = () => {
   return (
     <>
-      <h1>Home</h1>
+      <HomeBoardComponent />
     </>
   )
 }
