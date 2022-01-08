@@ -1,0 +1,7 @@
+{
+  "appId": "to.digital.com",
+  "appName": "to-digital",
+  "webDir": "out",
+  "bundledWebRuntime": false,
+  "skipSslCertificateCheck": true
+}
