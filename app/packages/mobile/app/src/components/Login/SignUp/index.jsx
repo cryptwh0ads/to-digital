@@ -21,7 +21,7 @@ const SignUpComponent = () => {
           </p>
           <hr
             style={{
-              border: "1px solid yellow",
+              border: "1px solid #FFD369",
               width: "72px",
               marginBottom: "32px",
             }}

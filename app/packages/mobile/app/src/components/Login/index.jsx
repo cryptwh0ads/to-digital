@@ -19,7 +19,7 @@ const LoginComponent = () => {
           </p>
           <hr
             style={{
-              border: "1px solid #ffd700",
+              border: "1px solid #FFD369",
               width: "132px",
               marginBottom: "32px",
             }}
