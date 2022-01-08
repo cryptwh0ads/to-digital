@@ -2,6 +2,7 @@ import React from "react"
 
 import { Link } from "react-router-dom"
 import ButtonComponent from "../shared/Button"
+import CheckboxComponent from "../shared/Checkbox"
 import InputComponent from "../shared/Input"
 
 const LoginComponent = () => {
@@ -13,11 +14,13 @@ const LoginComponent = () => {
 
       <div className="sign-in-form">
         <div className="sign-in-form-title">
-          <p>Acesse sua conta</p>
+          <p>
+            Acesse <bold style={{ color: "#c6c6c6" }}>sua conta</bold>
+          </p>
           <hr
             style={{
-              border: "1px solid yellow",
-              width: "72px",
+              border: "1px solid #ffd700",
+              width: "132px",
               marginBottom: "32px",
             }}
           />
@@ -31,11 +34,9 @@ const LoginComponent = () => {
         <ButtonComponent text={"Entrar"} />
       </div>
 
-      <div className="sign-in-remember-me">
-        <input type="checkbox" />
-        <p>Lembrar-me</p>
+      <div className="sign-in-remember">
+        <CheckboxComponent text={"Lembrar de mim"} />
       </div>
-
       <div className="sign-in-footer">
         <h3>
           <Link to="/sign-up">Não possui uma conta?</Link>

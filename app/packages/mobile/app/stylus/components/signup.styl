@@ -1,50 +1,108 @@
-.sign-in-logo {
+.sign-up-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.sign-in-form {
+.sign-up-account-type {
+  color: #c6c6c6;
+  text-align: center;
+}
+
+.sign-up-account-type-options {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.sign-up-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 24px;
 }
 
-.sign-in-form-title {
+.sign-up-form-title {
   font-size: 32px;
   font-weight: bold;
-  margin-top: 62px;
   color: white;
 }
 
-.sign-in-form-inputs {
+.sign-up-form-inputs {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 16px;
 }
 
-.sign-in-remember-me {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -142px;
-  margin-top: 32px;
-  color: #c6c6c6;
-}
-
-input[type="checkbox"] {
-  width: 24px;
+/* The switch - the box around the slider */
+.switch-type-account {
+  position: relative;
+  display: inline-block;
+  width: 50px;
   height: 24px;
-  margin-right: 8px;
-  border: 1px solid #c6c6c6;
-  border-radius: 4px;
-  color: #c6c6c6;
+  margin: 16px;
 }
 
-.sign-in-footer {
+/* Hide default HTML checkbox */
+.switch-type-account input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ffd700;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ffd700;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  transform: translateX(22px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sign-up-footer {
   margin-top: 62px;
   display: flex;
   flex-direction: column;
@@ -56,7 +114,7 @@ input[type="checkbox"] {
     color: #c6c6c6;
   }
 
-  a:hover {
+  a:hover code {
     color: #ffd700;
   }
 }
