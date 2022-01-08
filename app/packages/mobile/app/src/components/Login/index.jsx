@@ -4,13 +4,13 @@ import { Link } from "react-router-dom"
 
 const LoginComponent = () => {
   return (
-    <div className="sign-up-container">
-      <div className="sign-up-logo">
+    <div className="sign-in-container">
+      <div className="sign-in-logo">
         <img src={"resources/images/w_logo.png"} alt="Logo" width={"360"} />
       </div>
 
-      <div className="sign-up-form">
-        <div className="sign-up-form-title">
+      <div className="sign-in-form">
+        <div className="sign-in-form-title">
           <p>Acesse sua conta</p>
           <hr
             style={{
@@ -21,31 +21,31 @@ const LoginComponent = () => {
           />
         </div>
 
-        <div className="sign-up-form-inputs">
+        <div className="sign-in-form-inputs">
           <input
             type={"email"}
             placeholder={"E-mail"}
-            className="sign-up-form-input"
+            className="sign-in-form-input"
           />
           <input
             type={"password"}
             placeholder={"Senha"}
-            className="sign-up-form-input"
+            className="sign-in-form-input"
           />
         </div>
 
-        <button type="button" className="sign-up-form-button">
+        <button type="button" className="sign-in-form-button">
           {" "}
           Login{" "}
         </button>
       </div>
 
-      <div className="sign-up-remember-me">
+      <div className="sign-in-remember-me">
         <input type="checkbox" />
         <p>Lembrar-me</p>
       </div>
 
-      <div className="sign-up-footer">
+      <div className="sign-in-footer">
         <h3>
           <Link to="/sign-up">Não possui uma conta?</Link>
         </h3>
