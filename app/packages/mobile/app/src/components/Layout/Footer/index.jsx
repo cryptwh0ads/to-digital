@@ -1,10 +1,10 @@
 import React from "react"
 import NavbarComponent from "../../Navbar"
 
-const FooterComponent = () => {
+const FooterComponent = ({ path }) => {
   return (
     <footer>
-      <NavbarComponent />
+      <NavbarComponent path={path} />
     </footer>
   )
 }
