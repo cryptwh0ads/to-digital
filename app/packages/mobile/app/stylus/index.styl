@@ -27,6 +27,15 @@ main {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 #to-digital-container {
   height: auto;
   width: 100%;
@@ -37,6 +46,7 @@ main {
   @import "components/home-board-first-section.styl";
   @import "components/home-board-second-section.styl";
   @import "components/home-board-third-section.styl";
+  @import "components/home-board-fourth-section.styl";
 
   @import "components/navbar.styl";
   @import "components/shared.styl";

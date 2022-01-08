@@ -7,9 +7,21 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 
-export const CarouselItem = ({ children, width }) => {
+export const CarouselItem = ({ children, width, bg }) => {
   return (
     <div className="carousel-item" style={{ width: width }}>
+      {bg ? (
+        <img
+          src={bg}
+          alt="Carousel item background"
+          style={{
+            width: "100%",
+            objectFit: "cover",
+            zIndex: "0",
+            position: "absolute",
+          }}
+        />
+      ) : null}
       {children}
     </div>
   )

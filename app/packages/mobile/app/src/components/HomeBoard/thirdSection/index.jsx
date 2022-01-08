@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faClock, faCalendar } from "@fortawesome/free-solid-svg-icons"
 import React from "react"
 
-import Carousel, { CarouselItem } from "./carrousel"
+import Carousel, { CarouselItem } from "../../shared/Carousel"
 
 const ThirdSection = () => {
   return (
