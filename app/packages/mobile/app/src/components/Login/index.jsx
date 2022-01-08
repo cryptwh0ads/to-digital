@@ -31,7 +31,9 @@ const LoginComponent = () => {
           <InputComponent type={"password"} placeholder={"Senha"} />
         </div>
 
-        <ButtonComponent text={"Entrar"} />
+        <Link to="/home-board">
+          <ButtonComponent text={"Entrar"} />
+        </Link>
       </div>
 
       <div className="sign-in-remember">

@@ -9,7 +9,7 @@ import {
   faPlus,
 } from "@fortawesome/free-solid-svg-icons"
 
-const HomeBoardComponent = () => {
+const NavbarComponent = () => {
   return (
     <>
       <div className="navbar">
@@ -41,4 +41,4 @@ const HomeBoardComponent = () => {
   )
 }
 
-export default HomeBoardComponent
+export default NavbarComponent

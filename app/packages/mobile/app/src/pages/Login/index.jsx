@@ -8,7 +8,7 @@ import HomePage from "../Home"
 const LoginPage = () => {
   return (
     <>
-      <Route exact path="/" component={HomePage} />
+      <Route exact path="/" component={LoginComponent} />
       <Route exact path="/sign-up" component={SignUpComponent} />
     </>
   )

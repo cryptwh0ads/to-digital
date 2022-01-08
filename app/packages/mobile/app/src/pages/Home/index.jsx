@@ -1,12 +1,7 @@
 import React from "react"
-import HomeBoardComponent from "../../components/HomeBoard"
 
 const HomePage = () => {
-  return (
-    <>
-      <HomeBoardComponent />
-    </>
-  )
+  return <>Home</>
 }
 
 export default HomePage
