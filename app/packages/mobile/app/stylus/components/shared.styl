@@ -1,22 +1,22 @@
 .custom-input {
   width: 260px;
   height: 40px;
-  border-bottom: 1px solid #ffd369;
+  border-bottom: 1px solid $primaryColor;
   margin-bottom: 16px;
-  color: #c6c6c6;
+  color: $secondaryColor;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .custom-input::placeholder {
-  color: #c6c6c6;
+  color: $secondaryColor;
 }
 
 .custom-button {
   width: 260px;
   height: 52px;
   border-radius: 6px;
-  background-color: #ffd369;
+  background-color: $primaryColor;
   color: #000;
   font-size: 18px;
   font-weight: 800;
@@ -24,7 +24,7 @@
 }
 
 .custom-button:hover {
-  background-color: #ffd700;
+  background-color: $primaryColor;
 }
 
 .custom-checkbox {
@@ -39,7 +39,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #c6c6c6;
+  color: $secondaryColor;
 }
 
 /* Hide the browser's default checkbox */
@@ -58,17 +58,17 @@
   left: 0;
   height: 18px;
   width: 18px;
-  background-color: #eee;
+  background-color: $secondaryColor;
 }
 
 /* On mouse-over, add a grey background color */
 .custom-checkbox:hover input ~ .custom-checkMark {
-  background-color: #ccc;
+  background-color: $secondaryColor;
 }
 
 /* When the checkbox is checked, add a blue background */
 .custom-checkbox input:checked ~ .custom-checkMark {
-  background-color: #ffd369;
+  background-color: $primaryColor;
 }
 
 /* Create the custom-checkMark/indicator (hidden when not checked) */
@@ -89,7 +89,7 @@
   top: 0px;
   width: 5px;
   height: 10px;
-  border: solid #393e46;
+  border: solid $bgColor;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
