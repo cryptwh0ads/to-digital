@@ -96,7 +96,7 @@
   },
   "build": {
     "appId": "to.digital.app",
-    "productName": "To Digital",
+    "productName": "Tô Digital!",
     "generateUpdatesFilesForAllChannels": true,
     "files": [
       "out",
