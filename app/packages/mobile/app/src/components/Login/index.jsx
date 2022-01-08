@@ -1,6 +1,8 @@
 import React from "react"
 
 import { Link } from "react-router-dom"
+import ButtonComponent from "../shared/Button"
+import InputComponent from "../shared/Input"
 
 const LoginComponent = () => {
   return (
@@ -22,22 +24,11 @@ const LoginComponent = () => {
         </div>
 
         <div className="sign-in-form-inputs">
-          <input
-            type={"email"}
-            placeholder={"E-mail"}
-            className="sign-in-form-input"
-          />
-          <input
-            type={"password"}
-            placeholder={"Senha"}
-            className="sign-in-form-input"
-          />
+          <InputComponent type={"text"} placeholder={"E-mail"} />
+          <InputComponent type={"password"} placeholder={"Senha"} />
         </div>
 
-        <button type="button" className="sign-in-form-button">
-          {" "}
-          Login{" "}
-        </button>
+        <ButtonComponent text={"Entrar"} />
       </div>
 
       <div className="sign-in-remember-me">
