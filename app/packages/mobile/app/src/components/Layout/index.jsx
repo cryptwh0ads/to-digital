@@ -11,6 +11,7 @@ const LayoutComponent = (props) => {
         props.location.pathname === "/sign-up" ? null : (
           <FooterComponent />
         )}
+        {/* <FooterComponent /> */}
       </footer>
     </>
   )
