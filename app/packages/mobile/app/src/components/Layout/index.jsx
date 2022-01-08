@@ -7,11 +7,11 @@ const LayoutComponent = (props) => {
     <>
       <main>{props.children}</main>
       <footer>
-        {props.location.pathname === "/" ||
+        {/* {props.location.pathname === "/" ||
         props.location.pathname === "/sign-up" ? null : (
           <FooterComponent />
-        )}
-        {/* <FooterComponent /> */}
+        )} */}
+        <FooterComponent />
       </footer>
     </>
   )

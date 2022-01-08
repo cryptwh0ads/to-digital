@@ -9,7 +9,7 @@ const LoginPage = () => {
   return (
     <>
       <Route exact path="/sign-up" component={SignUpComponent} />
-      <Route exact path="/" component={LoginComponent} />
+      <Route exact path="/" component={HomePage} />
     </>
   )
 }
