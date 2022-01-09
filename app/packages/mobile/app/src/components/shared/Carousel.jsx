@@ -27,7 +27,7 @@ export const CarouselItem = ({ children, width, bg }) => {
   )
 }
 
-const Carousel = ({ children }) => {
+const Carousel = ({ children, autoRolling }) => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const updateIndex = (newIndex) => {
@@ -39,6 +39,20 @@ const Carousel = ({ children }) => {
 
     setActiveIndex(newIndex)
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!!autoRolling) {
+        updateIndex(activeIndex + 1)
+      }
+    }, 3000)
+
+    return () => {
+      if (interval) {
+        clearInterval(interval)
+      }
+    }
+  })
 
   const handlers = useSwipeable({
     onSwipedLeft: () => updateIndex(activeIndex + 1),

@@ -7,7 +7,7 @@ import {
   faHome,
   faSearch,
   faUser,
-  faHistory,
+  faCalendarAlt,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons"
 
@@ -44,7 +44,9 @@ const NavbarComponent = ({ path }) => {
               className="navbar-item-3"
               style={path === "/history" ? { color: "#EEE" } : null}
             >
-              <FontAwesomeIcon icon={faHistory} />
+              <Link to="/history">
+                <FontAwesomeIcon icon={faCalendarAlt} />
+              </Link>
             </div>
             <div
               className="navbar-item-4"
