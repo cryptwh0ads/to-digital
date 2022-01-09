@@ -1,12 +1,10 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faClock,
-  faCalendar,
   faCoins,
   faWineGlass,
-  faWarehouse,
-  faBreadSlice,
+  faStoreAlt,
+  faUtensils,
 } from "@fortawesome/free-solid-svg-icons"
 import Carousel, { CarouselItem } from "../../shared/Carousel"
 
@@ -61,7 +59,7 @@ const FourthSection = () => {
                         </h3>
                         <div className="fourth-section-content-item-info">
                           <p style={{ marginRight: "16px" }}>
-                            <FontAwesomeIcon icon={faBreadSlice} /> Restaurante,
+                            <FontAwesomeIcon icon={faUtensils} /> Restaurante,
                             comida, alimentação
                           </p>
                         </div>
@@ -87,7 +85,7 @@ const FourthSection = () => {
                         </h3>
                         <div className="fourth-section-content-item-info">
                           <p style={{ marginRight: "16px" }}>
-                            <FontAwesomeIcon icon={faWarehouse} /> Bar, balada,
+                            <FontAwesomeIcon icon={faStoreAlt} /> Bar, balada,
                             entreternimento
                           </p>
                         </div>

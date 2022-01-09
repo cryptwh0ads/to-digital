@@ -19,8 +19,6 @@ const TopBarComponent = ({ path }) => {
                 ? "Encontre o serviço mais próximo"
                 : path === "/history"
                 ? "Histórico dos agendamentos"
-                : path === "/profile"
-                ? "Perfil"
                 : null}
             </span>
           </div>

@@ -52,7 +52,9 @@ const NavbarComponent = ({ path }) => {
               className="navbar-item-4"
               style={path === "/profile" ? { color: "#EEE" } : null}
             >
-              <FontAwesomeIcon icon={faUser} />
+              <Link to="/profile">
+                <FontAwesomeIcon icon={faUser} />
+              </Link>
             </div>
           </div>
         </div>
