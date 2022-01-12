@@ -16,7 +16,8 @@ const App = () => {
           <Route exact path="/home-board" component={HomePage} />
           <Route exact path="/search" component={SearchPage} />
           <Route exact path="/history" component={HistoryPage} />
-          <Route exact path="/profile" component={ProfilePage} />
+
+          <ProfilePage />
           <LoginPage />
         </LayoutComponent>
       </Switch>
