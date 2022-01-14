@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
+import { Link } from "react-router-dom"
 
 const DetailsComponent = () => {
   return (
@@ -90,18 +91,19 @@ const DetailsComponent = () => {
               <p>Av. Teste testado</p>
             </div>
           </div>
-
-          <div className="search-details-container-body-button">
-            <button
-              type="button"
-              className="search-details-container-body-button-title"
-            >
-              <span>
-                Consultar catálogo de preços{" "}
-                <FontAwesomeIcon icon={faChevronRight} />
-              </span>
-            </button>
-          </div>
+          <Link to="/search-catalog-price">
+            <div className="search-details-container-body-button">
+              <button
+                type="button"
+                className="search-details-container-body-button-title"
+              >
+                <span>
+                  Consultar catálogo de preços{" "}
+                  <FontAwesomeIcon icon={faChevronRight} />
+                </span>
+              </button>
+            </div>
+          </Link>
         </div>
       </div>
     </>

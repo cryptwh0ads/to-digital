@@ -3,6 +3,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import { faCompass, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "react-router-dom"
 
 const SearchComponent = () => {
   return (
@@ -30,14 +31,17 @@ const SearchComponent = () => {
                   </p>
                 </div>
               </div>
-              <div className="search-container-results-item-actions">
-                <div className="search-container-results-item-action-button">
-                  <button>Mais Detalhes </button>
+              <Link to={"/search-details"}>
+                <div className="search-container-results-item-actions">
+                  <div className="search-container-results-item-action-button">
+                    <button>Mais Detalhes </button>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
+
         <div className="search-container-results-inner">
           <div className="search-container-results-item">
             <div className="search-container-results-item-inner">
