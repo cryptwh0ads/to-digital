@@ -21,7 +21,9 @@ const TopBarComponent = ({ path }) => {
                 ? "Histórico dos agendamentos"
                 : path === "/edit-profile"
                 ? "Editar perfil"
-                : null}
+                : path === "/change-password/generate-token"
+                ? "Confirmar Email"
+                : "Confirmar Email"}
             </span>
           </div>
         </div>

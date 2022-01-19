@@ -12,6 +12,8 @@ import {
   faBuilding,
 } from "@fortawesome/free-solid-svg-icons"
 
+import { Link } from "react-router-dom"
+
 const ProfileComponent = () => {
   return (
     <>
@@ -76,20 +78,21 @@ const ProfileComponent = () => {
         </div>
 
         <div className="profile-content-cards">
-          <div className="profile-content-card">
-            <div className="profile-content-card-icon">
-              <FontAwesomeIcon icon={faNewspaper} />
+          <Link to="/edit-profile">
+            <div className="profile-content-card">
+              <div className="profile-content-card-icon">
+                <FontAwesomeIcon icon={faNewspaper} />
+              </div>
+              <div className="profile-content-card-info">
+                <h2>
+                  <span>Dados Pessoais</span>
+                </h2>
+              </div>
+              <div className="profile-content-card-access">
+                <FontAwesomeIcon icon={faChevronRight} />
+              </div>
             </div>
-            <div className="profile-content-card-info">
-              <h2>
-                <span>Dados Pessoais</span>
-              </h2>
-            </div>
-            <div className="profile-content-card-access">
-              <FontAwesomeIcon icon={faChevronRight} />
-            </div>
-          </div>
-
+          </Link>
           {/* If is Enterprise Account type, able this card */}
           <div className="profile-content-card">
             <div className="profile-content-card-icon">
